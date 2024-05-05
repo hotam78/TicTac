@@ -8,10 +8,10 @@ function App() {
   return (
     <>
       <h1>Tic Tac Teo</h1>
-      <Button/>
-      <Board/>
-      <X/>
-      <O/>
+      <Button text={'play solo'}/>
+      {/* <Board/> */}
+      {/* <X/> */}
+      {/* <O/> */}
     </>
   )
 }
