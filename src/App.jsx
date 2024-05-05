@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <h1>Tic Tac Teo</h1>
-      <Button text={'play solo'}/>
+      <Button text={'play solo'} width={'150px'}/>
       {/* <Board/> */}
       {/* <X/> */}
       {/* <O/> */}
