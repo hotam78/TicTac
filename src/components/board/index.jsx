@@ -2,8 +2,10 @@ import React from 'react'
 import styles from './style.module.scss'
 
 
-export default function Board() {
+export default function Board({ title }) {
   return (
-    <div>Board</div>
+    <div className={styles.board}>
+      <div className={styles.title}>{title}</div>
+    </div>
   )
 }
