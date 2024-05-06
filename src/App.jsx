@@ -2,16 +2,22 @@ import Button from './components/button'
 import Board from './components/board'
 import X from './components/x'
 import O from './components/o'
+import Title from './components/title'
+import Card from './components/card'
 
 function App() {
 
   return (
     <>
-      <h1>Tic Tac Teo</h1>
-      <Button text={'play solo'} width={'150px'}/>
-      {/* <Board/> */}
-      {/* <X/> */}
-      {/* <O/> */}
+
+
+
+    <Card/>
+    <Card value={'x'}/>
+    <Card value={'o'}/>
+    {/* <Title text={'join to a game'} fontSize={'30px'}/> */}
+    {/* <Button text={'play solo'} width={'300px'}/> */}
+    {/* <Board/> */}
     </>
   )
 }
