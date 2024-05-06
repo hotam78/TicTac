@@ -5,6 +5,9 @@ import O from './components/o'
 import Back from './components/back'
 import Player from './components/player'
 import PlayerBoard from './components/playerBoard'
+import Title from './components/title'
+import Card from './components/card'
+import Menu from './pages/menu'
 
 function App() {
 

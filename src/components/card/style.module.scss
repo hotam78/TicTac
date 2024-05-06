@@ -1,0 +1,14 @@
+@import '../../vars';
+
+.card {
+    background-color: $lightBlue;
+    width: 80px;
+    // aspect-ratio: 1/1;
+    height: 78px;
+    border: 2px solid black;
+    border-radius: 6px;
+    box-shadow: -1.5px 1.5px 0px 0.3px black;
+    margin: 20px;
+    @extend .f-c;
+    padding: 15px;
+}
