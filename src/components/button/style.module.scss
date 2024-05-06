@@ -1,7 +1,9 @@
 @import '../../vars';
 
 .button {
-    border-radius: 16px;
-    background-color: $yellow;
-    
+    border-radius: 25px;
+    // text-shadow:  1px 1px 0 black;
+    -webkit-text-stroke: 1px $brown;
+    @extend .button-style;
+    padding: 5px;
 }

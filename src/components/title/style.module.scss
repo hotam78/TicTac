@@ -1,0 +1,12 @@
+@import '../../vars';
+
+.title {
+    border-radius: 50%;
+    // background: linear-gradient(135deg, #ffffff, #e0e0e0);
+    // box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
+    @extend .f-c;
+        h1{
+            -webkit-text-stroke: 1px black;
+            text-shadow:  0px 0px 30px #23ACF9;
+        }
+}

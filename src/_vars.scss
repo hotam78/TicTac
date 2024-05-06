@@ -1,2 +1,20 @@
-$yellow: #B28100;
+$yellow: #FCD015;
+$orange: #FBB500;
+$brown: #B28100;
 $blue: #0050b2;
+$white: #ffff;
+$lightBlue: #C9F9FC;
+
+.f-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-style {
+    @extend .f-c;
+    background-color: $yellow;
+    box-shadow: 0px 5px 0px 0px $orange;
+    border: 0.1px solid white;
+    border-top: 0;
+}
