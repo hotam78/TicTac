@@ -5,10 +5,11 @@ import X from '../x'
 
 
 
-export default function Card({value}) {
+export default function Card({ value }) {
+  console.log(value);
   return (
     <div className={styles.card}>
-      {value=='x'? <X/> : value=='o'? <O/> :''}
+      {value == 'x' ? <X /> : value == 'o' ? <O /> : ''}
     </div>
 
   )
