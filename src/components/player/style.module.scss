@@ -1,0 +1,33 @@
+@import '../../vars';
+
+.borderPlayer{
+    width: 30vw;
+    height: 30vw;
+    border: 8px solid $brown;
+    border-radius: 50%;
+    // border-image: url('403021_avatar_girl_user_young_child_icon');
+    position: relative ;
+
+
+
+}
+
+.imgPlayer{
+    width: 100%;
+    aspect-ratio: 1/1;
+        }
+
+        .score{
+            background-color: black;
+            // font-family: 'Kavoon';
+            width: 75%;
+            height: 30px;
+            font-size: small;
+            border-radius: 8px;
+            @extend .f-c;
+            // font-weight: ;
+            position: absolute;
+            margin-left: 10%;
+            margin-top: -15px;
+
+        }

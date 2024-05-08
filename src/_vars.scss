@@ -6,6 +6,8 @@ $white: #ffff;
 $lightBlue: #C9F9FC;
 $turkiz: #8EEBFF;
 
+$mainPaddind: 1rem;
+
 .f-c {
     display: flex;
     align-items: center;
@@ -14,8 +16,9 @@ $turkiz: #8EEBFF;
 
 .button-style {
     @extend .f-c;
-    background-color: $yellow;
+    background-color: #FCD015;
     box-shadow: 0px 5px 0px 0px $orange;
     border: 0.1px solid white;
-    border-top: 0;
+    border-top: 0px;
+
 }

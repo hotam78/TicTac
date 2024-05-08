@@ -1,0 +1,24 @@
+@import '../../vars';
+
+.back{
+    
+    background-color: $yellow;
+    @extend .button-style;
+    border-radius: 8px;
+width: 9vh;
+height: 8vh;
+padding: 8px;
+
+.backSvg{
+    font-size: xx-large;
+    width:100%;
+    // path{
+    //     stroke-width: 5px;
+    // }
+}
+
+
+    
+
+
+}
