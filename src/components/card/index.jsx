@@ -5,11 +5,11 @@ import X from '../x'
 
 
 
-export default function Card({ value }) {
+export default function Card({ value, onClickFunc, isActive }) {
   console.log(value);
   return (
-    <div className={styles.card}>
-      {value == 'x' ? <X /> : value == 'o' ? <O /> : ''}
+    <div value={value} className={`${styles.card} ${isActive == null ? '' : isActive ? styles.active : styles.noActive}`} onClick={() => onClickFunc(value)}>
+      {value == 'x' ? <X gray={isActive == false} /> : value == 'o' ? <O gray={isActive == false} /> : ''}
     </div>
 
   )

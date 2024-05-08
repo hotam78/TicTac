@@ -2,36 +2,42 @@
 
 
 .main{
-    padding: 20px;
+    padding: $mainPadding;
 }
 
 .choose{
-    padding-right: 15px;
     margin-top: 100px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     align-items: center;
     justify-content: center;
-    // margin-top: 100px;
+
+    &>.button{
+        @extend .f-c;
+        width: 100%;
+        margin-top: 50px;
+    }
+    
 }
 
-.board{
-    position: relative;
-   
-    // @extend .f-c
-}
-
-.card{
-    display: flex;
-    position: absolute;
-    top: 12px;
-    left: 25px;
 
 
+
+.cards{
+    display: grid;
+   padding: 15px;
+   justify-content: space-between;
+   grid-template-columns: 1fr 1fr;
+   gap:15px;
 
 }
 
-.card:hover{
+.cards >div> svg{
+   width: 100%; 
+   max-height: 100%;
+}
+
+.cards >div:hover svg{
     transform: scale(1.2);
 }
