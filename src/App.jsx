@@ -14,8 +14,8 @@ function App() {
 
   return (
     <>
-      <Menu/>
-      {/* <ChoosePlayer /> */}
+      {/* <Menu/> */}
+      <ChoosePlayer />
       {/* <img src={'LogoSmall.png'} /> */}
       {/* <PlayerBoard />
       <Player /> */}
