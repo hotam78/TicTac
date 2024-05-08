@@ -2,18 +2,21 @@
 
 .card {
     background-color: $lightBlue;
-    width: 130px;
-    // width: 50%;
-    // aspect-ratio: 1/1;
-    height: 128px;
+    aspect-ratio: 1/1;
     border: 2px solid black;
     border-radius: 6px;
     box-shadow: -1.5px 1.5px 0px 0.3px black;
-    margin: 20px;
     @extend .f-c;
     padding: 15px;
 }
 
+.active svg{
+    transform: scale(1.2);
+
+}
+ .noActive{
+    background-color: $gray;
+ }
 
   
 
