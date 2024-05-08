@@ -8,14 +8,17 @@ import PlayerBoard from './components/playerBoard'
 import Title from './components/title'
 import Card from './components/card'
 import Menu from './pages/menu'
+import ChoosePlayer from './pages/choosePlayer'
 
 function App() {
 
   return (
     <>
+
+      <ChoosePlayer />
       {/* <img src={'LogoSmall.png'} /> */}
-      <PlayerBoard />
-      <Player />
+      {/* <PlayerBoard />
+      <Player /> */}
 
       {/* <Button text={'play solo'} width={'150px'}/> */}
       {/* <Board/> */}

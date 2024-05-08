@@ -2,9 +2,10 @@
 
 .card {
     background-color: $lightBlue;
-    width: 80px;
+    width: 130px;
+    // width: 50%;
     // aspect-ratio: 1/1;
-    height: 78px;
+    height: 128px;
     border: 2px solid black;
     border-radius: 6px;
     box-shadow: -1.5px 1.5px 0px 0.3px black;
@@ -12,3 +13,7 @@
     @extend .f-c;
     padding: 15px;
 }
+
+
+  
+

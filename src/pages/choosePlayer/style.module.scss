@@ -1,0 +1,37 @@
+@import '../../vars';
+
+
+.main{
+    padding: 20px;
+}
+
+.choose{
+    padding-right: 15px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    // margin-top: 100px;
+}
+
+.board{
+    position: relative;
+   
+    // @extend .f-c
+}
+
+.card{
+    display: flex;
+    position: absolute;
+    top: 12px;
+    left: 25px;
+
+
+
+}
+
+.card:hover{
+    transform: scale(1.2);
+}
