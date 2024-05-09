@@ -1,11 +1,22 @@
 import React from 'react'
 import styles from './style.module.scss'
+import X from '../x'
+import O from '../o'
 
-export default function Player() {
+export default function Player({ player }) {
+
+    // TODO- להוסיף תכלת ושאר אפקטים לשחקן שעכשיו תורו
+    const { name, wins, shape, img } = player;
     return (
         <div className={styles.borderPlayer}>
-            <img src={'403021_avatar_girl_user_young_child_icon 1.png'} className={styles.imgPlayer} />
-            <div className={styles.score}>wins: 13</div>
+            <img src={img} className={styles.imgPlayer} />
+
+            <div className={styles.score}>wins: {wins}</div>
+            <div className={styles.shape}>
+                {shape == 'x' ? <X /> : <O />}
+            </div>
+            <h6>{name}</h6>
+
         </div>
     )
 }
