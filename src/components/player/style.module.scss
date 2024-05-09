@@ -1,28 +1,35 @@
 @import '../../vars';
 
 .borderPlayer{
-    width: 30vw;
-    height: 30vw;
+    width: 25vw;
+    height: 25vw;
     border: 8px solid $brown;
     border-radius: 50%;
-    // border-image: url('403021_avatar_girl_user_young_child_icon');
     position: relative ;
 
 
+    & > h6 {
+        position: absolute;
+        margin-top: 15px;
+        margin-left: 7px;
+    }
 
 }
+
+
 
 .imgPlayer{
     width: 100%;
     aspect-ratio: 1/1;
-        }
+}
 
         .score{
             background-color: black;
-            // font-family: 'Kavoon';
+            font-family: 'Kavoon';
             width: 75%;
             height: 30px;
-            font-size: small;
+            // TODO- change font
+            font-size: 0.4rem;
             border-radius: 8px;
             @extend .f-c;
             // font-weight: ;
@@ -31,3 +38,12 @@
             margin-top: -15px;
 
         }
+
+        .shape{
+            width: 30%;
+            position: absolute;
+            margin-left: 2%;
+            margin-top: -20px;
+        }
+
+        
