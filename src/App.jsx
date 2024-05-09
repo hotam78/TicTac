@@ -9,23 +9,20 @@ import Title from './components/title'
 import Card from './components/card'
 import Menu from './pages/menu'
 import ChoosePlayer from './pages/choosePlayer'
+import Waiting from './pages/waiting'
+import Loading from './components/loading'
+import WaitingJoin from './pages/waitingJoin'
 
 function App() {
 
   return (
     <>
-      {/* <Menu/> */}
-      <ChoosePlayer />
-      {/* <img src={'LogoSmall.png'} /> */}
-      {/* <PlayerBoard />
-      <Player /> */}
 
-      {/* <Button text={'play solo'} width={'150px'}/> */}
-      {/* <Board/> */}
-      {/* <X/> */}
-      {/* <O/> */}
-      {/* <Back /> */}
-      {/* <Board title={'yore code'} /> */}
+    {/* <Loading/> */}
+    
+      <Waiting/>
+      {/* <Menu/> */}
+      {/* <ChoosePlayer /> */}      
     </>
   )
 }

@@ -9,15 +9,29 @@ $sGray:#9B9B9B;
 $gray: #D1D1D1;
 
 
-
 $mainPadding: 1rem;
-
-$mainPaddind: 1rem;
 
 .f-c {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.text-border1 {
+    -webkit-text-stroke: 1px black;
+
+}
+.text-border {
+    letter-spacing: 3px;
+    text-shadow:
+    3px 3px 0 #000,
+    -3px 3px 0 #000,
+    -3px 0 0 #000,
+    -0 -4px 0 #000,
+    -3px -3px 0 #000,
+    3px 0 0 #000,
+     0 4px 0 #000,
+    3px -3px 0 #000;
 }
 
 .button-style {
