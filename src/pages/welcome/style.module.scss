@@ -1,0 +1,51 @@
+.welcome {
+    // border: 2px solid black;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    // overflow: hidden;
+
+    & > .leftTop{
+        margin-top: 100px;
+        margin-left: 100px;
+        position: absolute;
+        // width: 200px;
+        width: 44%;
+
+        transform:  rotate(-15deg);
+        filter: blur(4px);
+    }
+    & > .rightTop{
+        margin-top: 250px;
+        margin-left: 900px;
+        position: absolute;
+        // width: 170px;
+        width: 41%;
+        transform:  rotate(2deg);
+        filter: blur(5px);
+    }
+    & > img{
+        margin-top: 250px;
+        // margin-left: -100px;
+        // width: 1500px;
+    }
+    & > .leftBottom{
+        margin-top: 300px;
+        margin-left: 100px;
+        position: absolute;
+        // width: 300px;
+        width: 80%;
+        transform:  rotate(15deg);
+        filter: blur(4px);
+
+    }
+    & > .rightBottom{
+        margin-top: 600px;
+        margin-left: 950px;
+        position: absolute;
+        // width: 400px;
+        width: 120%;
+        transform:  rotate(20deg);
+        filter: blur(6px);
+    }
+}
