@@ -15,13 +15,15 @@ import Waiting from './pages/waiting'
 import Loading from './components/loading'
 import WaitingJoin from './pages/waitingJoin'
 import Setting from './pages/setting'
+import Welcome from './pages/welcome'
 
 function App() {
 
   return (
     <>
+    <Welcome/>
     {/* <Setting/> */}
-      <BoardWithPlayers />
+      {/* <BoardWithPlayers /> */}
       {/* <JoinGame/> */}
       {/* <Menu/> */}
       {/* <ChoosePlayer /> */}
