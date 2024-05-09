@@ -9,16 +9,20 @@ import Title from './components/title'
 import Card from './components/card'
 import Menu from './pages/menu'
 import ChoosePlayer from './pages/choosePlayer'
+import JoinGame from './pages/joinGame'
+import BoardWithPlayers from './pages/boardWithPlayers'
 
 function App() {
 
   return (
     <>
+      <BoardWithPlayers />
+      {/* <JoinGame /> */}
       {/* <Menu/> */}
-      <ChoosePlayer />
+      {/* <ChoosePlayer /> */}
       {/* <img src={'LogoSmall.png'} /> */}
-      {/* <PlayerBoard />
-      <Player /> */}
+      {/* <PlayerBoard /> */}
+      {/* <Player /> */}
 
       {/* <Button text={'play solo'} width={'150px'}/> */}
       {/* <Board/> */}

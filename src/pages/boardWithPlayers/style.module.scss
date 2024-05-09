@@ -1,0 +1,53 @@
+@import '../../vars';
+
+.gamePage {
+
+    & > .upDiv {
+
+        & .players {
+            display: flex;
+            justify-content: space-evenly;
+            position: absolute;
+            margin-top: -40px;
+            width: 100%;
+        }
+
+        & .winner {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+    }
+
+
+    & > .content {
+        padding: $mainPadding;
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        & .boardDiv {
+            display: grid;
+            padding: 5px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            justify-content: space-between;
+            gap:5px;
+
+            
+        }
+
+        & .buttons{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+        }
+    }
+    }
+    
