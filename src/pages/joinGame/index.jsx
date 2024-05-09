@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './style.module.scss'
-import Back from '../../components/back'
+import Icon from '../../components/icon'
 import Title from '../../components/title'
 import Board from '../../components/board'
 import Button from '../../components/button'
@@ -10,7 +10,7 @@ export default function JoinGame() {
   return (
     <div className={styles.main}>
 
-      <Back />
+      <Icon/>
       <div className={styles.page}>
         <Title text={'join to a game'} fontSize={'1.4rem'} />
         <Board ><input type='text' placeholder='enter code game' className={styles.input} /></Board>

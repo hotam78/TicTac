@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styles from './style.module.scss'
 import Title from '../../components/title'
 import Board from '../../components/board'
-import Back from '../../components/back'
+import Icon from '../../components/icon'
 import X from '../../components/x'
 import Card from '../../components/card'
 import Button from '../../components/button'
@@ -21,7 +21,7 @@ export default function ChoosePlayer() {
   return (
     <>
       <div className={styles.main}>
-        <Back />
+        <Icon />
         <div className={styles.choose}>
           <Title text={'CHOOSE PLAYER'} fontSize={'40px'} />
           <Board height={'7rem'} >  <div className={styles.cards}>
