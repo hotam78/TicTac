@@ -1,6 +1,11 @@
 @import '../../vars';
 
+
 .gamePage {
+    // width: 100%;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
 
     & > .upDiv {
 
@@ -8,7 +13,7 @@
             display: flex;
             justify-content: space-evenly;
             position: absolute;
-            margin-top: -40px;
+            margin-top: -30px;
             width: 100%;
         }
 
@@ -22,7 +27,7 @@
 
     & > .content {
         padding: $mainPadding;
-        padding-top: 50px;
+        padding-top: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -36,8 +41,6 @@
             grid-template-rows: 1fr 1fr 1fr;
             justify-content: space-between;
             gap:5px;
-
-            
         }
 
         & .buttons{

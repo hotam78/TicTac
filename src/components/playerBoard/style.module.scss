@@ -1,23 +1,31 @@
 @import '../../vars';
 
 
-.border{
-    margin-top: 12%;
-    position: relative;
-    background-color: $brown;
-    width: 100vw;
-    height: 80px;
-   transform:  rotate(6deg);
+.playerBoard {
+    overflow: hidden;
+    height: 140px;
 
+    & > .border{
+        margin-top: 12%;
+        position: relative;
+        background-color: $brown;
+        width: 110vw;
+        height: 85px;
+        transform:  rotate(-2deg);
+        margin-left: -6px;
+
+        & > .yellowDiv{
+            position: absolute;
+            width: 110vw;
+            height: 85px;
+            background-color: $yellow;
+            transform:  rotate(2deg);
+            // margin-top: px;
+        }
+    }
 }
+
     
 
 
-.yellowDiv{
-    position: absolute;
-    width: 100vw;
-    height: 100px;
-    background-color: $yellow;
-    transform:  rotate(-6deg);
 
-}

@@ -1,17 +1,22 @@
 @import '../../vars';
 
-.borderPlayer{
-    width: 25vw;
-    height: 25vw;
-    border: 8px solid $brown;
+
+.borderPlayer {
+    width: 20vw;
+    height: 20vw;
+    border: 3px solid $brown;
     border-radius: 50%;
     position: relative ;
 
 
     & > h6 {
         position: absolute;
-        margin-top: 15px;
-        margin-left: 7px;
+        // TODO- למצוא דרך אחרת למקם אתזה לא לפי פיקסלים
+        margin-top: 5px;
+        margin-left: 10px;
+        -webkit-text-stroke: 0.2px black;
+        font-size: 0.7rem;
+        text-align: center; 
     }
 
 }
@@ -27,23 +32,25 @@
             background-color: black;
             font-family: 'Kavoon';
             width: 75%;
-            height: 30px;
-            // TODO- change font
-            font-size: 0.4rem;
-            border-radius: 8px;
+            height: 20px;
+            font-size: 0.3rem;
+            border-radius: 4px;
             @extend .f-c;
-            // font-weight: ;
             position: absolute;
             margin-left: 10%;
             margin-top: -15px;
-
         }
 
         .shape{
             width: 30%;
             position: absolute;
-            margin-left: 2%;
+            margin-left: -2%;
             margin-top: -20px;
         }
 
+
+        // .yourTurn {
+        //     transform: scale(1.2);
+        //     border: 8px solid red;
+        // }
         
