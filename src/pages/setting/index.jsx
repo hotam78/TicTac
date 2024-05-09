@@ -6,7 +6,8 @@ import Icon from '../../components/icon'
 
 export default function Setting() {
 
-  const avatars = [['girlAvater.png','girl avatar'],['girlAvater.png','girl avatar'],['girlAvater.png','girl avatar']]
+  // TODO- לאחד מסגרות כי יש אווטראים שהגיעו עם
+  const avatars = [['avatar5.png','boy avatar'],['avatar1.png','girl avatar'],['avatar4.png','girl avatar']]
 
   return (
     <div className={styles.setting}>
