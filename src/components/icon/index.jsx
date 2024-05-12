@@ -2,7 +2,6 @@ import React from 'react'
 import styles from './style.module.scss'
 
 
-
 export default function Icon({onClickFunc, icon = 'back'}) {
 
     return (
