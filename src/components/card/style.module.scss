@@ -8,15 +8,19 @@
     box-shadow: -1.5px 1.5px 0px 0.3px black;
     @extend .f-c;
     padding: 15px;
+    position: relative;
 }
 
-.active svg{
-    transform: scale(1.2);
+.card.active svg {
+    position: absolute;
+    width: 110%;
 }
 
- .noActive{
+.noActive {
     background-color: $gray;
- }
+}
 
-  
-
+.card svg {
+    max-width: 100%;
+    max-height: 100%;
+}
