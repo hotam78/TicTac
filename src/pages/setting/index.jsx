@@ -4,7 +4,6 @@ import Board from '../../components/board'
 import Title from '../../components/title'
 import Icon from '../../components/icon'
 import { useNavigate } from 'react-router'
-import { log } from 'console'
 
 export default function Setting() {
   const nav = useNavigate();
@@ -16,10 +15,10 @@ export default function Setting() {
   console.log(userName);
 
   // TODO- in one func
-  // const handleVi = () => {
-  //   localStorage.user = JSON.parse({name: 'hodaya'});
-  //   nav('/menu');
-  // }
+  const handleVi = () => {
+    localStorage.user = JSON.parse({name: 'hodaya'});
+    nav('/menu');
+  }
 
   return (
     <div className={styles.setting}>
@@ -33,7 +32,7 @@ export default function Setting() {
         </div>
       </div>
       <div className={styles.buttons}>
-          <Icon icon={'back'} onClickFunc={()=> nav('/menu')}/>
+          <Icon icon={'back'} onClickFunc={handleVi}/>
           <Icon icon={'vi'} onClickFunc={()=> nav('/menu')}/>
       </div>
     </div>
