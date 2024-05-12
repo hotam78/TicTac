@@ -1,41 +1,28 @@
-import Button from './components/button'
-import Board from './components/board'
-import X from './components/x'
-import O from './components/o'
-import Back from './components/icon'
-import Player from './components/player'
-import PlayerBoard from './components/playerBoard'
-import Title from './components/title'
-import Card from './components/card'
 import Menu from './pages/menu'
 import ChoosePlayer from './pages/choosePlayer'
 import JoinGame from './pages/joinGame'
 import BoardWithPlayers from './pages/boardWithPlayers'
 import Waiting from './pages/waiting'
-import Loading from './components/loading'
 import WaitingJoin from './pages/waitingJoin'
 import Setting from './pages/setting'
 import Welcome from './pages/welcome'
+import { Route, Routes } from 'react-router'
 
 function App() {
 
   return (
     <>
-    <Welcome/>
-    {/* <Setting/> */}
-      {/* <BoardWithPlayers /> */}
-      {/* <JoinGame/> */}
-      {/* <Menu/> */}
-      {/* <ChoosePlayer /> */}
-      {/* <img src={'LogoSmall.png'} /> */}
-      {/* <PlayerBoard /> */}
-      {/* <Player /> */}
-
-    {/* <Loading/> */}
-    
-      {/* <Waiting/> */}
-      {/* <Menu/> */}
-      {/* <ChoosePlayer /> */}      
+    <Routes>
+      <Route path='/' element={<Welcome/>}/>
+      <Route path='menu' element={<Menu/>}/>
+      <Route path='setting' element={<Setting/>}/>
+      <Route path='joinGame' element={<JoinGame/>}/>
+      <Route path='waiting' element={<Waiting/>}/>
+      <Route path='waitingJoin' element={<WaitingJoin/>}/>
+      <Route path='choosePlayer' element={<ChoosePlayer/>}/>
+      <Route path='board' element={<BoardWithPlayers/>}/>
+      <Route path='*' element={<h1>not found</h1>}/>
+    </Routes>
     </>
   )
 }

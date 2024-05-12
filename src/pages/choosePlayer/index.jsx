@@ -14,7 +14,6 @@ export default function ChoosePlayer() {
   const [isChoose, setIsChoose] = useState(null)
 
   const chooseShape = (v) => {
-    console.log(v)
     setIsChoose(v)
   }
 

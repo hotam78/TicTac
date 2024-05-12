@@ -9,7 +9,7 @@ import Button from '../../components/button'
 import PlayerBoard from '../../components/playerBoard'
 import Player from '../../components/player'
 
-
+ 
 export default function BoardWithPlayers() {
   const [win, setWin] = useState(false);
   const [playerShape, setPlayerShape] = useState('x')
@@ -18,9 +18,6 @@ export default function BoardWithPlayers() {
 
   function handleClick (value, index) {
     if(value) return;
-    // נראלי פשוט ההדפסה של סטייטים עובדת רק אחרי שנגמר הפונקציה
-    // console.log('cardArr', cardArr);
-    // console.log('value:', value, ',  index:', index);
     const newArr = [...cardArr];
     newArr[index]=playerShape;
     setCardArr(newArr);
@@ -39,7 +36,7 @@ export default function BoardWithPlayers() {
       </div>
       <div className={styles.content}>
         <Board overflow={true}>
-          <div className={styles.boardDiv}>{cardArr.map((c, i) => <Card onClickFunc={handleClick} value={c} index={i}/>)}</div>
+          <div className={styles.boardDiv}>{cardArr.map((c, i) => <Card onClickFunc={handleClick} value={c} index={i} isActive={null}/>)}</div>
         </Board>
 
         {win ? <div className={styles.buttons}><Button text='play again' width='60%' /> <Button text='back to main' width='60%' /></div> : <Button text='Back' width='50%' />}

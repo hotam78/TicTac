@@ -5,10 +5,8 @@ import O from '../o'
 
 export default function Player({ player, yourTurn = 'false' }) {
 
-    // TODO- להוסיף תכלת ושאר אפקטים לשחקן שעכשיו תורו
     const { name, wins, shape, img } = player;
     return (
-        // textDecoration: completed ? 'line-through' : 'none'
 
         <div className={`${styles.borderPlayer}`} 
         style={{border: yourTurn ?'3px solid #8EEBFF' : '' ,transform: yourTurn? 'scale(1.2)' : ''}} >
