@@ -7,6 +7,7 @@ import WaitingJoin from './pages/waitingJoin'
 import Setting from './pages/setting'
 import Welcome from './pages/welcome'
 import { Route, Routes } from 'react-router'
+import socket from './socket'
 
 function App() {
 
